@@ -341,6 +341,32 @@
         </script>
     </section>
 
+    <section>
+        <h1>**Soal 3:**</h1>
+
+        <p>Buatlah API sederhana untuk menyimpan pesan. API ini harus menerima parameter "pesan" melalui metode POST dan mengembalikan JSON berisi status penyimpanan pesan (sukses/gagal).</p>
+
+        <pre><code>/api/message?message=<b>$message</b></code></pre>
+
+        <p>Hasil response sukses:</p>
+
+        <pre id="json-message"></pre>
+
+        <script>
+            // Contoh JSON
+            const message = {
+                "status": "Sukses",
+                "message": "Pesan berhasil disimpan."
+            };
+
+            // Mengubah JSON menjadi string dengan format yang indah
+            const messageString = JSON.stringify(message, null, 2);
+
+            // Menampilkan JSON dalam elemen pre
+            document.getElementById('json-message').textContent = messageString;
+        </script>
+    </section>
+
     <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
     <footer>
