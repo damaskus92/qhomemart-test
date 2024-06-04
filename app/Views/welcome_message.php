@@ -394,6 +394,33 @@
         </script>
     </section>
 
+    <section>
+        <h1>**Soal 5:**</h1>
+
+        <p>Buatlah API sederhana untuk menyapa pengguna dengan nama yang dimasukkan melalui parameter "name" melalui metode GET.</p>
+
+        <pre><code>/api/hello?name=<b>QHomeMart</b></code></pre>
+
+        <p>Hasil response sukses:</p>
+
+        <pre id="json-greeting"></pre>
+
+        <script>
+            // Contoh JSON
+            const greeting = {
+                "data": {
+                    "message": "Halo, QHomeMart! Selamat pagi, semoga harimu menyenangkan dan jangan lupa tersenyum."
+                }
+            };
+
+            // Mengubah JSON menjadi string dengan format yang indah
+            const greetingString = JSON.stringify(greeting, null, 2);
+
+            // Menampilkan JSON dalam elemen pre
+            document.getElementById('json-greeting').textContent = greetingString;
+        </script>
+    </section>
+
     <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
     <footer>
