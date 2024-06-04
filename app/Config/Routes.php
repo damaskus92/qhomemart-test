@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 $routes->get('api/movies', 'MovieController::index');
+$routes->post('api/rectangle', 'RectangleController::index');

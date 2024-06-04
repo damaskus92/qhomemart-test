@@ -276,7 +276,6 @@
     <!-- CONTENT -->
 
     <section>
-
         <h1>**Soal 1:**</h1>
 
         <p>Buatlah API sederhana untuk menampilkan daftar film berdasarkan genre. API ini harus menerima parameter "genre" melalui metode GET dan mengembalikan JSON berisi daftar film dengan genre tersebut.</p>
@@ -312,6 +311,33 @@
 
             // Menampilkan JSON dalam elemen pre
             document.getElementById('json-movies').textContent = jsonString;
+        </script>
+    </section>
+
+    <section>
+        <h1>**Soal 2:**</h1>
+
+        <p>Buatlah API sederhana untuk menghitung luas persegi panjang. API ini harus menerima parameter "panjang" dan "lebar" melalui metode POST dan mengembalikan JSON berisi nilai luas.</p>
+
+        <pre><code>/api/rectangle?length=<b>8</b>&width=<b>3</b></code></pre>
+
+        <p>Hasil response sukses:</p>
+
+        <pre id="json-rectangle"></pre>
+
+        <script>
+            // Contoh JSON
+            const rectangle = {
+                "data": {
+                    "luas": 24
+                }
+            };
+
+            // Mengubah JSON menjadi string dengan format yang indah
+            const rectangleString = JSON.stringify(rectangle, null, 2);
+
+            // Menampilkan JSON dalam elemen pre
+            document.getElementById('json-rectangle').textContent = rectangleString;
         </script>
     </section>
 
