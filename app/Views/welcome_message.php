@@ -367,6 +367,33 @@
         </script>
     </section>
 
+    <section>
+        <h1>**Soal 4:**</h1>
+
+        <p>Buatlah API sederhana untuk menampilkan tanggal dan waktu saat ini dalam format JSON.</p>
+
+        <pre><code>/api/datetime</code></pre>
+
+        <p>Hasil response sukses:</p>
+
+        <pre id="json-datetime"></pre>
+
+        <script>
+            // Contoh JSON
+            const datetime = {
+                "data": {
+                    "datetime": "05 Juni 2024 21:32:51"
+                }
+            };
+
+            // Mengubah JSON menjadi string dengan format yang indah
+            const datetimeString = JSON.stringify(datetime, null, 2);
+
+            // Menampilkan JSON dalam elemen pre
+            document.getElementById('json-datetime').textContent = datetimeString;
+        </script>
+    </section>
+
     <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
 
     <footer>
